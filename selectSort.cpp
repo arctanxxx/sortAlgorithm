@@ -1,5 +1,5 @@
-// 选择排序 2019-04-09
-// 依次选出最小的数放在数组的最前面
+// 2019-04-09 selectSort 
+// Pick the smallest number in turn and put it first in the array
 
 #include<stdio.h>
 
@@ -7,14 +7,14 @@ void selectSort(int *arr,int n)
 {
 	for(int i = 0;i < n;i++)		 
 	{
-		int key = i;				// 用 key 记录最小元素坐标 
-		for(int j = i+1;j<n;j++) 	// 从第二个元素向后开始寻找 
+		int key = i;				// Record the minimum element coordinates with key 
+		for(int j = i+1;j<n;j++) 	// Look backwards from the second element
 		{
 			key = arr[j] < arr[key] ? j : key;
 			/*
-			if(arr[j] < arr[key])	// 如果找到比 arr[key] 小的元素 
+			if(arr[j] < arr[key])	
 			{
-				key = j;			// 此时将最小元素坐标赋值给 key 
+				key = j;			
 			}
 			*/
 			
@@ -34,7 +34,7 @@ int main()
 	int n = sizeof(arr) / sizeof(int);
 	 
 	selectSort(arr,n);
-	printf("\n排好序的数组为：\n");
+	printf("\nThe sorted array is：\n");
 	for(int i = 0;i<n;i++)
 		printf("%d ",arr[i]);
 	printf("\n");

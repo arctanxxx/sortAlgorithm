@@ -1,4 +1,4 @@
-// 2019-04-09 快速排序 
+// 2019-04-09 quickSort 
 /*
 过程：在数组中随机选择一个数字，小于等于该数字的元素放在其左边，大于等于该元素的数字放在右边， 分别递归调用左右两个部分 
 */
@@ -60,7 +60,7 @@ int main()
 	int n = sizeof(arr) / sizeof(int);
 	 
 	quickSort(arr,0,n-1);
-	printf("\n排好序的数组为：\n");
+	printf("\nThe sorted array is：\n");
 	for(int i = 0;i<n;i++)
 		printf("%d ",arr[i]);
 	printf("\n");

@@ -1,4 +1,4 @@
-// 插入排序 2019-04-09 
+// 2019-04-09 insertSort 
 
 #include<stdio.h>
 
@@ -43,7 +43,7 @@ int main()
 	 
 	// insertSort(arr,n);
 	insertSort_Two(arr,n);
-	printf("\n排好序的数组为：\n");
+	printf("\nThe sorted array is：\n");
 	for(int i = 0;i<n;i++)
 		printf("%d ",arr[i]);
 	printf("\n");

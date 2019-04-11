@@ -1,4 +1,4 @@
-// 2019-04-09 ц╟ещеепР 
+// 2019-04-09 bubbleSort
 #include<stdio.h>
 
 void bubbleSort(int *arr,int n)

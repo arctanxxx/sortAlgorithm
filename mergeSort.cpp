@@ -1,4 +1,4 @@
-// 归并排序 2019-04-10 
+//  2019-04-10 归并排序 
 #include<stdio.h>
 #include<limits.h>
 
@@ -45,7 +45,7 @@ int main()
 	int n = sizeof(arr) / sizeof(int);
 	 
 	mergeSort(arr,0,n-1);
-	printf("\n排好序的数组为：\n");
+	printf("\nThe sorted array is：\n");
 	for(int i = 0;i<n;i++)
 		printf("%d ",arr[i]);
 	printf("\n");
